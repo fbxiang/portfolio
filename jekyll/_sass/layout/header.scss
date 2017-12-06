@@ -1,0 +1,56 @@
+@import "../modules/variables";
+
+header a {
+  opacity: 0.8;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+header a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.site-header-container {
+  width: 100vw;
+  background-color: $background-color-1;
+  padding: 20px 0;
+}
+
+.site-header {
+  max-width: 1000px;
+  margin: auto;
+  color: $color-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: $font-1;
+  font-weight: lighter;
+}
+
+.header-col-1 {
+  text-align: center;
+}
+
+.header-col-1 .name {
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+.header-col-1 .title {
+  display: flex;
+  justify-content: center;
+}
+
+.header-col-1 .title > * {
+  margin: 4px;
+  opacity: 0.9;
+}
+
+.header-col-2 {
+  font-size: 1.2em;
+}
+
+.header-col-3 {
+  font-size: 1.2em;
+}

@@ -1,0 +1,14 @@
+@import "../modules/variables";
+
+body {
+  background-color: $body-background;
+}
+
+.page-content {
+  text-align: justify;
+  font-family: $font-2;
+}
+
+.page-content a {
+  color: firebrick;
+}

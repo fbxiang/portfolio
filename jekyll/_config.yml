@@ -1,0 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+author: Fanbo Xiang
+author_title: [Designer, Web Developer, Mobile Developer, Game Developer]
+telephone: +1 (217)979-0754
+email: fxiang2@illinois.edu
+description: >-
+  I am a computer science student focusing on data science and machine learning. I have experience and interest in   computer game making, music information retrieval, and software engineering as well. I will continue with compute  r science after my graduation. After graduation, I would like to work as a developer or researcher either in a co  mpany or in a graduate program.
+baseurl: ""
+url: "www.fbxiang.com"
+github_username:  fbxiang
+linkedin_username: fanbo-xiang
+
+# Build settings
+
+markdown: kramdown
+theme: minima
+# plugins:
+#   - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

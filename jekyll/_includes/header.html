@@ -1,0 +1,35 @@
+<header class="site-header-container">
+  <div class="site-header">
+    <div class="header-col-1">
+      <h1 class="name">{{ site.author | escape }}</h1>
+      <div class="title">
+        {% for title in site.author_title %}
+        <div>{{ title | escape }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="header-col-2">
+      <div>
+        <a href="https://github.com/{{site.github_username}}">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          Github
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/{{site.linkedin_username}}">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          Linkedin
+        </a>
+      </div>
+    </div>
+    <div class="header-col-3">
+      <div>
+        <a href="mailto:{{site.email}}">{{site.email}}</a>
+      </div>
+      <div>{{site.telephone}}</div>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <!-- TODO add nav -->
+  </nav>
+</header>
