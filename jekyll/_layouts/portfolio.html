@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
+  <style>
+    .page-content {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+    }
+    .side-nav {
+      min-width: 250px;
+      margin: 0 20px;
+    }
+    .side-nav h2 {
+      margin: 10px;
+    }
+    a.side-nav-item {
+      display: block;
+      padding: 10px;
+      border-radius: 4px;
+      opacity: 0.5;
+      transition: all 0.5s;
+      text-decoration: none;
+      color: black;
+    }
+    a.side-nav-item:hover, a.side-nav-item.active {
+      opacity: 1;
+      background-color: #DEDEDE;
+    }
+  </style>
   <body>
     {% include header.html %}
     <main class="page-content" aria-label="Content">
-      {{content}}
+      <div class="side-nav">
+        <h2>Projects</h2>
+        {% for p in site.portfolio %}
+        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+          {{p.title}}
+        </a>
+        {% endfor %}
+      </div>
+      <div>
+        <h1>{{page.title}}</h1>
+        {{content}}
+      </div>
     </main>
   </body>
   {%include footer.html %}

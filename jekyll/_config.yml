@@ -23,8 +23,11 @@ baseurl: ""
 url: "www.fbxiang.com"
 github_username:  fbxiang
 linkedin_username: fanbo-xiang
-
 # Build settings
+
+collections:
+  portfolio:
+    output: true
 
 markdown: kramdown
 theme: minima
