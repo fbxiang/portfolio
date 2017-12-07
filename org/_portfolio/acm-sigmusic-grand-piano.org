@@ -5,6 +5,19 @@
 ---
 layout: portfolio
 title: ACM SigMusic Grand Piano
+summary:
+  type: Web app
+  language: Javascript, HTML
+  status: exhibited at EOH
+  description: >-
+    Grand Piano is a project by ACM SigMusic for Engineering Open House 2017 at UIUC.
+    I participated in the design of visual elements and music generation logic.
+    I myself designed the Web app code structure.
+  images:
+    - key: Screenshots
+      content: 
+        - url: /assets/grand_piano_1.png
+          name: grand piano screenshot
 ---
 #+END_EXPORT
 
@@ -29,3 +42,12 @@ title: ACM SigMusic Grand Piano
   - Designed and participated in the implementation of the game loop structure.
   - Denoised hardware input and tuned implementations on the fly when facing
     hardware failures during the exhibit.
+
+#+BEGIN_EXPORT html
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe id="ytplayer" type="text/html" width="100%" height="100%" style="position: absolute" allowfullscreen
+  src="https://www.youtube.com/embed/FVedboVVNAg"
+  frameborder="0">
+</iframe>
+</div>
+#+END_EXPORT

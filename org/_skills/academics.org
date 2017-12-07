@@ -1,0 +1,71 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: Academics
+---
+#+END_EXPORT
+
+* Skills
+** Data structures and algorithms
+- Array, Linked List, Binary Search Tree, AVL Tree, B+ Tree, Graphs
+- Regex, Automata, Turing Machine, NP-hardness proof
+- Divide and conquer, Dynamic programming, Linear Programming
+- Linear system, Root finding, Gradient descent
+** AI and Machine Learning
+- Informed Graph Search, Game Tree, Reinforcement Learning
+- Support Vector Machine, Decision Tree, Random Forest, Clustering algorithms, Neural networks
+- PID control, First order logic
+** Machine learning tools
+- Python: Numpy, Scipy, Scikit-learn, Tensorflow, Keras
+- Java: Weka
+** Software Principles
+- Object oriented programming, MVC and MVVM UI design
+- Iterative product design, User study
+** Software Tools
+- Python: Flask, TkInter
+- Javascript: Node, Express, Angular, React, D3
+- Unity3D: C# scripts
+- Unreal4: C++ scripts
+- OpenGL, SDL
+** System and Programming Languages
+- Understanding of Processes, Virtual Memory and File system
+- Low level networking and sockets
+- Language interpreter
+** Programming and Markup
+- Proficient: C++, Java, Javascript, C#, HTML, Python, Matlab, Latex, Markdown
+- Fluent: Ruby, Lua, Bash, R
+- Other: EmacsLisp, ChucK
+
+* Courses
+** data structure
+- CS225 Data Structures
+- CS374 Algorithms and Models of Computation
+- CS450 Numerical Analysis
+- CS418 Computer Graphics
+** AI
+- CS361 Probability for Computer Science
+- CS446 Machine Learning
+- CS440 Artificial Intelligence
+- CS412 Data mining
+- CS498 AI for Computer Games
+- CS598 Machine Learning for Signal Processing
+
+** software
+- CS242 Programming Studio
+- CS465 User Interface Design
+** system
+- CS241 System Programming
+- CS421 Programming Languages and Compilers
+** mathematics
+- MATH347 Fundamental Mathematics(Honors)
+- MATH416 Abstract Linear Algebra(Honors)
+- MATH424 Real Analysis(Honors)
+- MATH427 Abstract Algebra(Honors)
+- MATH448 Complex Analysis
+- MATH461 Probability Theory
+- MATH412 Graph Theory
+- MATH564 Applied Stochastic Process

@@ -1,0 +1,47 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: Chord Analysis
+summary:
+  type: Matlab program
+  language: Matlab
+  status: Prototype
+  description: This is my individual project a long time ago
+  images:
+    - key: Load and play music
+      content:
+        - url: /assets/chord_1.png
+    - key: Estimate chords
+      content:
+        - url: /assets/chord_2.png
+    - key: Real-time tracking
+      content:
+        - url: /assets/chord_3.png
+---
+#+END_EXPORT
+[[https://github.com/fbxiang/music-analysis/]]
+
+* Estimate chords
+
+I had long been interested in music and decided to explore the harmonics of
+music. I did this project on my own to get myself familiar with music analysis
+and signal processing. Here are what I learned and achieved:
+
+- Built a fully functional music player with Matlab
+- Understood how music is stored and played
+- Learned basic structures of music generation
+- Learned discrete Fourier transform and short time Fourier transform
+- Defined chord models and assigned probability to chords according to frequencies
+- Here is a video demo of the program analyzing a music piece I wrote.
+
+#+BEGIN_EXPORT html
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe id="ytplayer" type="text/html" width="100%" height="100%" style="position: absolute" allowfullscreen
+  src="https://www.youtube.com/embed/JegukFAbSMQ"
+  frameborder="0">
+</iframe>
+</div>
+#+END_EXPORT

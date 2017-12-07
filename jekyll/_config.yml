@@ -23,14 +23,19 @@ baseurl: ""
 url: "www.fbxiang.com"
 github_username:  fbxiang
 linkedin_username: fanbo-xiang
+blog: https://www.fbxiang.com/blog
 # Build settings
 
 collections:
   portfolio:
     output: true
+  profile:
+    output: true
+  skills:
+    output: true
 
 markdown: kramdown
-theme: minima
+# theme: minima
 # plugins:
 #   - jekyll-feed
 

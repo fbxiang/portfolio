@@ -1,0 +1,43 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: Unity3D UniInventory
+summary:
+  type: Unity3D
+  language: C#
+  status: Prototype
+  description: This is my individual project for the Programming Studio course.
+  images:
+    - key: Inventory display
+      content:
+        - url: /assets/inventory_1.png
+        - url: /assets/inventory_2.png
+---
+#+END_EXPORT
+
+[[https://github.com/fbxiang/InventoryDemo]]
+
+* RPG style inventory system
+
+I found inventory system a good start point for any kind of game. The existing
+inventory systems are lacking extendability. Therefore I designed my own
+inventory system to be more programmable:
+- Item as an abstract base class for easy extension
+- Model-View-Controller paradigm for easy control over different inventories
+- Tree data structures for data storage and manipulation of the inventory
+- provide customizable tool-tip display
+- Animation and sound interfaces for user interaction
+- Game update loop encapsulated and broadcasted to all items
+- Callback style item usage definition
+
+#+BEGIN_EXPORT html
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe id="ytplayer" type="text/html" width="100%" height="100%" style="position: absolute" allowfullscreen
+  src="https://www.youtube.com/embed/YERpxM46MNA"
+  frameborder="0">
+</iframe>
+</div>
+#+END_EXPORT

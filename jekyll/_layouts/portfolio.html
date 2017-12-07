@@ -3,20 +3,24 @@
   {% include head.html %}
   <style>
     .page-content {
-      max-width: 1000px;
+      max-width: 1500px;
       margin: auto;
       display: flex;
+      padding: 20px;
     }
+    .page-content > * { margin: 10px }
     .side-nav {
       min-width: 250px;
+      max-width: 250px;
       margin: 0 20px;
     }
     .side-nav h2 {
       margin: 10px;
     }
     a.side-nav-item {
+      font-size: 0.95em;
       display: block;
-      padding: 10px;
+      padding: 8px 20px 8px 10px;
       border-radius: 4px;
       opacity: 0.5;
       transition: all 0.5s;
@@ -27,21 +31,62 @@
       opacity: 1;
       background-color: #DEDEDE;
     }
+    .content { flex-grow: 1; }
+    .side { min-width: 350px; max-width: 350px; }
+    main img { width: 100%; }
   </style>
   <body>
     {% include header.html %}
     <main class="page-content" aria-label="Content">
       <div class="side-nav">
+        <h2>Profile</h2>
+        {% for p in site.profile %}
+        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+          {{p.title}}
+        </a>
+        {% endfor %}
+        <a class="side-nav-item" target="_blank" href="{{ 'CV.pdf' | relative_url }}">Resume</a>
         <h2>Projects</h2>
         {% for p in site.portfolio %}
         <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
           {{p.title}}
         </a>
         {% endfor %}
+        <h2>Skills</h2>
+        {% for p in site.skills %}
+        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+          {{p.title}}
+        </a>
+        {% endfor %}
+        <h2>Blog</h2>
+        <a class="side-nav-item" target="_blank" href="{{ site.blog }}">Technical Blog</a>
       </div>
-      <div>
+      <div class="content">
         <h1>{{page.title}}</h1>
         {{content}}
+      </div>
+      <div class="side">
+        {% if page.summary %}
+        <h2>Project Summary</h2>
+        <ul>
+          {% if page.summary.type %}
+          <li>Project type: {{page.summary.type}}</li>
+          {% endif %}
+          {% if page.summary.language %}
+          <li>Language: {{page.summary.language}}</li>
+          {% endif %}
+          {% if page.summary.status %}
+          <li>Status: {{page.summary.status}}</li>
+          {% endif %}
+        </ul>
+        <p>{{page.summary.description}}</p>
+        {% for section in page.summary.images %}
+        <h2>{{section.key}}</h2>
+        {% for img in section.content %}
+        <img src="{{img.url}}" alt="{{img.name}}" />
+        {% endfor %}
+        {% endfor %}
+        {% endif %}
       </div>
     </main>
   </body>

@@ -5,6 +5,17 @@
 ---
 layout: portfolio
 title: CUMTD Bus Assistant
+summary:
+  type: Android application
+  language: Java
+  status: Prototype
+  description: >-
+    This is the final project for the UI design course at UIUC, I was the team coordinator of a group of 5 (4 in the end). I am the main program designer of this app. I led the implementations and was responsible for all the details. I collaborated with visual designers and finished the app successfully.
+  images:
+    - key: Application on device
+      content: 
+        - url: /assets/cumtd_1.png
+          name: cumtd
 ---
 #+END_EXPORT
 
@@ -22,3 +33,7 @@ This app supports the following features for bus systems in the Champaign-Urbana
 The main focus of this app is to gain experience of user interface design. We
 followed the iterative design process, analyzed previous app designs and
 recognized problems, tested prototyping at various fidelity and user studies.
+
+#+BEGIN_EXPORT html
+<img src="{{site.baseurl}}/assets/cumtd_0.png" alt="cumtd_0.png"/>
+#+END_EXPORT
