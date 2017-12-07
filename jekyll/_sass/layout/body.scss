@@ -17,3 +17,47 @@ body {
   color: firebrick;
   text-align: left;
 }
+
+.page-content {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+}
+.page-content > * { margin: 10px }
+.side-nav {
+  min-width: 250px;
+  max-width: 250px;
+  @media #{$screen-small} {
+    display: none;
+  }
+}
+.side-nav h2 {
+  margin: 10px;
+}
+a.side-nav-item {
+  font-size: 0.95em;
+  display: block;
+  padding: 8px 20px 8px 10px;
+  border-radius: 4px;
+  opacity: 0.5;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: black;
+}
+a.side-nav-item:hover, a.side-nav-item.active {
+  opacity: 1;
+  background-color: #DEDEDE;
+}
+.content { flex-grow: 1; }
+.side {
+  min-width: 350px;
+  max-width: 350px;
+  @media #{$screen-medium} {
+    display: none;
+  }
+  @media #{$screen-small} {
+    display: none;
+  }
+}
+.page-content img { width: 100%; }

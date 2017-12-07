@@ -1,40 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
-  <style>
-    .page-content {
-      max-width: 1500px;
-      margin: auto;
-      display: flex;
-      padding: 20px;
-    }
-    .page-content > * { margin: 10px }
-    .side-nav {
-      min-width: 250px;
-      max-width: 250px;
-      margin: 0 20px;
-    }
-    .side-nav h2 {
-      margin: 10px;
-    }
-    a.side-nav-item {
-      font-size: 0.95em;
-      display: block;
-      padding: 8px 20px 8px 10px;
-      border-radius: 4px;
-      opacity: 0.5;
-      transition: all 0.5s;
-      text-decoration: none;
-      color: black;
-    }
-    a.side-nav-item:hover, a.side-nav-item.active {
-      opacity: 1;
-      background-color: #DEDEDE;
-    }
-    .content { flex-grow: 1; }
-    .side { min-width: 350px; max-width: 350px; }
-    main img { width: 100%; }
-  </style>
   <body>
     {% include header.html %}
     <main class="page-content" aria-label="Content">

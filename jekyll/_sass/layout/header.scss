@@ -49,8 +49,31 @@ header a:hover {
 
 .header-col-2 {
   font-size: 1.2em;
+  @media #{$screen-small} {
+    display: none;
+  }
 }
 
 .header-col-3 {
   font-size: 1.2em;
+  @media #{$screen-small} {
+    display: none;
+  }
+}
+
+.profile-container {
+  max-width: 1000px;
+  min-height: 50vh;
+  margin: 20px auto;
+}
+
+.page-content .profile-container img {
+  float: left;
+  max-width: 200px;
+  width: 18vw;
+  margin: 0 20px 10px 0;
+  border-radius: 30%;
+  @media #{$screen-small} {
+    display: none;
+  }
 }
