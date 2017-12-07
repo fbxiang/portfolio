@@ -4,3 +4,4 @@ _site
 jekyll/assets
 jekyll/_*
 !jekyll/_sass
+jekyll/CV.pdf
