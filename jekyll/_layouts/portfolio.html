@@ -4,28 +4,35 @@
   <body>
     {% include header.html %}
     <main class="page-content" aria-label="Content">
-      <div class="side-nav">
-        <h2>Profile</h2>
-        {% for p in site.profile %}
-        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
-          {{p.title}}
-        </a>
-        {% endfor %}
-        <a class="side-nav-item" target="_blank" href="{{ 'CV.pdf' | relative_url }}">Resume</a>
-        <h2>Projects</h2>
-        {% for p in site.portfolio %}
-        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
-          {{p.title}}
-        </a>
-        {% endfor %}
-        <h2>Skills</h2>
-        {% for p in site.skills %}
-        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
-          {{p.title}}
-        </a>
-        {% endfor %}
-        <h2>Blog</h2>
-        <a class="side-nav-item" target="_blank" href="{{ site.blog }}">Technical Blog</a>
+      <div class="side-nav" id="side-nav">
+        <div class="side-nav-main">
+          <h2>Profile</h2>
+          {% for p in site.profile %}
+          <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+            {{p.title}}
+          </a>
+          {% endfor %}
+          <a class="side-nav-item" target="_blank" href="{{ 'CV.pdf' | relative_url }}">Resume</a>
+          <h2>Projects</h2>
+          {% for p in site.portfolio %}
+          <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+            {{p.title}}
+          </a>
+          {% endfor %}
+          <h2>Skills</h2>
+          {% for p in site.skills %}
+          <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+            {{p.title}}
+          </a>
+          {% endfor %}
+          <h2>Blog</h2>
+          <a class="side-nav-item" target="_blank" href="{{ site.blog }}">Technical Blog</a>
+        </div>
+        <div class="side-nav-menu">
+          <div>
+            <i id="drawer-switch" class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
       <div class="content">
         <h1>{{page.title}}</h1>
@@ -57,4 +64,17 @@
     </main>
   </body>
   {%include footer.html %}
+  <script>
+    var sw = document.getElementById('drawer-switch');
+    var nav = document.getElementById('side-nav');
+    sw.onclick = function() {
+      if (nav.classList.toggle('active')) {
+        sw.classList.remove('fa-bars');
+        sw.classList.add('fa-times');
+      } else {
+        sw.classList.add('fa-bars');
+        sw.classList.remove('fa-times');
+      }
+    };
+  </script>
 </html>
