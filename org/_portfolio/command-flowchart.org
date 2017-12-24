@@ -1,0 +1,42 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: Command Flowchart
+summary:
+  type: Web application
+  language: HTML, Typescript
+  status: Prototype
+  description: >-
+    This project is my own experiment of the graphical interface for programming with flowcharts
+---
+#+END_EXPORT
+
+[[https://github.com/fbxiang/flowchart-js]]
+
+* Command execution interface
+  This application mainly supports the execution of a series predefined commands. The main features include:
+  - Logic flow and data flow. Logic flow refers to the execution order of
+    commands that requires logic control, which often incurs side effects. For
+    example, "if" statements and arbitrary Bash commands requires logic control.
+    Data flow refers to manipulation of data. This operation is usually a simple
+    transformation on data. For example, adding numbers and concatenating
+    strings require only data flow.
+  - Logic execution. The back end executes the logic flow one node at a time.
+    Following the specified order. If a logic node has dependencies on data
+    node, the system automatically back track to acquire all data. All
+    intermediate results are cached.
+  - Strong typed data flow. All data flow has a strong type checking. The types
+    are all color coded and only types of the same color can be connected.
+    Conversion nodes between colors are available.
+  - Compile time dependency checking. Before execution of the graph, the system
+    checks suspicious connections that may result in circular dependencies (A
+    requires the data produced by B and B requires the data produced by A)
+  - Force killing. Users will be able to kill the process at any time.
+
+#+BEGIN_EXPORT html
+<img src="{{site.baseurl}}/assets/flowchart_1.png" alt="flowchart_1.png"/>
+#+END_EXPORT
+
