@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: Command Flowchart
+date: 2017-06-01
 summary:
   type: Web application
   language: HTML, Typescript

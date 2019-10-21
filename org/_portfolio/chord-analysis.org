@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: Chord Analysis
+date: 2014-12-01
 summary:
   type: Matlab program
   language: Matlab

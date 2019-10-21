@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: Simple 2D Physics Engine
+date: 2016-07-01
 summary:
   type: C++ program
   language: C++

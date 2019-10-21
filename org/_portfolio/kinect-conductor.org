@@ -1,0 +1,62 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: ACM Kinect Conductor
+date: 2018-03-01
+summary:
+  type: Interactive Game
+  language: Typescript, Python(Flask), C++ (Unreal Engine 4)
+  status: exhibited at EOH
+  description: >-
+    Kinect Conductor is a project by ACM SigMusic. I designed the graphics, game play,
+    web servers, and communication method between programs.
+  images:
+    - key: Pictures
+      content: 
+        - url: /assets/kinect_conductor_2.jpg
+          name: Kinect Conductor screenshot
+        - url: /assets/kinect_conductor_1.jpg
+          name: Kinect Conductor on exhibit
+---
+#+END_EXPORT
+
+* Interactive Game for Engineering Open House 2018
+  [[https://github.com/fbxiang/kinect-conductor-music-server]], [[https://github.com/fbxiang/kinect-conductor-game]], [[https://github.com/fbxiang/kinect-conductor-kinect-server]]
+  
+  Kinect Conductor is a interactive music game by ACM SigMusic for Engineering
+  Open House 2018 at UIUC. The game part consists the following:
+  - A C++ program based on Freenect and NiTE libraries that fetches body
+    skeleton data of players.
+  - A NodeJs server for providing the skeleton data.
+  - A Python Flask server that provides a set of pre-composed music patterns.
+  - A game developed with Unreal Engine 4. It fetches player skeleton data and
+    music pattern data from the servers, display them on the screen. When
+    players hit the music notes, it sends midi signals to a software synthesizer.
+  - A software synthesizer (example project from JUCE that runs the VST plugin Dexed)
+
+  I am the main developer and I participated in all tasks above except music
+  composition.
+
+* Web app for composing music patterns
+  [[https://github.com/fbxiang/kinect-conductor-composition-app]]
+  
+  This is a web app I built in a day for composers to quickly write music
+  patterns that run on our server. Most functionalities are realized with
+  JointJS and Jquery. It does the following:
+  - Create "chord" nodes, which contain the note and instrument information for
+    a measure of music chord.
+  - Create "Transitions", which links chord nodes to indicate chord
+    progressions.
+  - Save and load the music graph using Json format.
+
+#+BEGIN_EXPORT html
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe id="ytplayer" type="text/html" width="100%" height="100%" style="position: absolute" allowfullscreen
+  src="https://www.youtube.com/embed/ptASFx4RFzY"
+  frameborder="0">
+</iframe>
+</div>
+#+END_EXPORT

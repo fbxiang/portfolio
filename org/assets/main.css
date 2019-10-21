@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Oswald|Orbitron|Roboto");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: normal;
+  text-align: left; }
+
+a {
+  color: inherit; }
+
+footer {
+  clear: both; }
+
+header h1 {
+  text-align: center; }
+
+header a {
+  opacity: 0.8;
+  transition: all 0.3s;
+  text-decoration: none; }
+
+header a:hover {
+  opacity: 1;
+  text-decoration: underline; }
+
+.site-header-container {
+  width: 100vw;
+  background-color: #040C0E;
+  padding: 20px 0; }
+
+.site-header {
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Open Sans, Helvetica, Arila;
+  font-weight: lighter; }
+
+.header-col-1 {
+  text-align: center; }
+
+.header-col-1 .name {
+  font-size: 3em;
+  margin-bottom: 5px; }
+
+.header-col-1 .title {
+  display: flex;
+  justify-content: center; }
+
+.header-col-1 .title > * {
+  margin: 4px;
+  opacity: 0.9; }
+
+.header-col-2 {
+  font-size: 1.2em; }
+  @media only screen and (max-width: 800px) {
+    .header-col-2 {
+      display: none; } }
+
+.header-col-3 {
+  font-size: 1.2em; }
+  @media only screen and (max-width: 800px) {
+    .header-col-3 {
+      display: none; } }
+
+.profile-container {
+  max-width: 1000px;
+  min-height: 50vh;
+  margin: 20px auto; }
+
+.page-content .profile-container img {
+  float: left;
+  max-width: 200px;
+  width: 18vw;
+  margin: 0 20px 10px 0;
+  border-radius: 30%; }
+  @media only screen and (max-width: 800px) {
+    .page-content .profile-container img {
+      display: none; } }
+
+footer a {
+  opacity: 0.8;
+  transition: all 0.3s;
+  text-decoration: none; }
+
+footer a:hover {
+  opacity: 1; }
+
+.site-footer-container {
+  width: 100vw;
+  background-color: #343434;
+  color: white;
+  font-family: Open Sans, Helvetica, Arila;
+  font-size: 1em;
+  padding: 20px 0; }
+
+.site-footer {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto; }
+
+.site-footer h2 {
+  margin-bottom: 10px; }
+
+.site-footer .fa {
+  font-size: 2em; }
+
+.bottom-line {
+  width: 100vw;
+  background-color: #040C0E;
+  color: white;
+  text-align: right;
+  padding: 10px 0; }
+
+.bottom-line > * {
+  opacity: 0.7;
+  margin-right: 20px;
+  font-size: 0.9em; }
+
+body {
+  background-color: #F7F5F4; }
+
+.page-content {
+  text-align: justify;
+  font-family: Open Sans, Helvetica, Arila; }
+
+.page-content h1, h2 {
+  margin-bottom: 10px; }
+
+.page-content a {
+  color: firebrick;
+  text-align: left; }
+
+.page-content {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  position: relative; }
+
+.page-content > * {
+  margin: 10px; }
+
+.side-nav-main {
+  min-width: 250px;
+  max-width: 250px; }
+
+@media only screen and (max-width: 800px) {
+  .side-nav {
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    margin: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-250px);
+    background: white; }
+
+  .side-nav-main {
+    overflow-y: scroll; }
+
+  .side-nav.active {
+    transform: translateX(0); } }
+.side-nav-menu {
+  display: none; }
+  @media only screen and (max-width: 800px) {
+    .side-nav-menu {
+      display: block;
+      text-align: right; }
+      .side-nav-menu div {
+        width: 40px;
+        margin: 5px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.8em;
+        border-radius: 50%;
+        transition: all 0.5s; }
+      .side-nav-menu div:active {
+        background-color: #aaa; } }
+
+.side-nav h2 {
+  margin: 10px; }
+
+a.side-nav-item {
+  font-size: 0.95em;
+  display: block;
+  padding: 8px 20px 8px 10px;
+  border-radius: 4px;
+  opacity: 0.5;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: black; }
+
+a.side-nav-item:hover, a.side-nav-item.active {
+  opacity: 1;
+  background-color: #DEDEDE; }
+
+.content {
+  flex-grow: 1; }
+  @media only screen and (max-width: 800px) {
+    .content {
+      margin-left: 45px; } }
+
+.side {
+  min-width: 350px;
+  max-width: 350px; }
+  @media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .side {
+      display: none; } }
+  @media only screen and (max-width: 800px) {
+    .side {
+      display: none; } }
+
+.page-content img {
+  width: 100%; }

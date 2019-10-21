@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: CUMTD Bus Assistant
+date: 2016-12-01
 summary:
   type: Android application
   language: Java

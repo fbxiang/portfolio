@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: Unity3D UniInventory
+date: 2016-12-01
 summary:
   type: Unity3D
   language: C#

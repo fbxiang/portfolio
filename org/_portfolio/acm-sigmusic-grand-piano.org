@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: ACM SigMusic Grand Piano
+date: 2017-03-01
 summary:
   type: Web app
   language: Javascript, HTML

@@ -5,6 +5,7 @@
 ---
 layout: portfolio
 title: Search Plus Chrome Extension
+date: 2017-01-01
 summary:
   type: Chrome extension
   language: Javascript, HTML

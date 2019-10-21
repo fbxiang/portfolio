@@ -1,0 +1,36 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: Wheel Access Gnome Shell Extension
+date: 2018-03-23
+summary:
+  type: Gnome Shell Extension
+  language: Javascript
+  status: Ready for publish
+  description: >-
+    Wheel access is a gnome shell extension that provides a quick access wheel for user to select.
+    This project is mainly for aesthetic purposes, providing a nice quick-access interface.
+  images:
+    - key: Config window
+      content: 
+        - url: /assets/wheel_access_config.png
+          name: Wheel access config
+---
+#+END_EXPORT
+
+[[https://github.com/fbxiang/WheelAccess]]
+
+* Gnome extension
+  Wheel Access provides a customizable wheel selection interface for quick
+  access-actions. It provides the following features (for detailed instructions,
+  see the [[https://github.com/fbxiang/WheelAccess][github page]]:
+  - Adjust the number of selections available on the wheel
+  - Adjust the icon displayed and command executed
+  - Adjust the size of the wheel (both inner circle and outer circle)
+
+#+BEGIN_EXPORT html
+<img src="https://github.com/fbxiang/WheelAccess/raw/master/images/screenshot.png" alt="wheel_access.png"/>
+#+END_EXPORT

@@ -42,30 +42,28 @@ title: Academics
 
 * Courses
 ** data structure
-- CS225 Data Structures
-- CS374 Algorithms and Models of Computation
-- CS450 Numerical Analysis
-- CS418 Computer Graphics
+- Data Structures
+- Algorithms and Models of Computation
+- Numerical Analysis
+- Computer Graphics
 ** AI
-- CS361 Probability for Computer Science
-- CS446 Machine Learning
-- CS440 Artificial Intelligence
-- CS412 Data mining
-- CS498 AI for Computer Games
-- CS598 Machine Learning for Signal Processing
-
+- Machine Learning
+- Artificial Intelligence
+- Data mining
+- AI for Computer Games
+- Machine Learning for Signal Processing
 ** software
-- CS242 Programming Studio
-- CS465 User Interface Design
+- Programming Studio
+- User Interface Design
 ** system
-- CS241 System Programming
-- CS421 Programming Languages and Compilers
+- System Programming
+- Programming Languages and Compilers
 ** mathematics
-- MATH347 Fundamental Mathematics(Honors)
-- MATH416 Abstract Linear Algebra(Honors)
-- MATH424 Real Analysis(Honors)
-- MATH427 Abstract Algebra(Honors)
-- MATH448 Complex Analysis
-- MATH461 Probability Theory
-- MATH412 Graph Theory
-- MATH564 Applied Stochastic Process
+- Fundamental Mathematics(Honors)
+- Abstract Linear Algebra(Honors)
+- Real Analysis(Honors)
+- Abstract Algebra(Honors)
+- Complex Analysis
+- Probability Theory
+- Graph Theory
+- Applied Stochastic Process
