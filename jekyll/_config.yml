@@ -14,8 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 author: Fanbo Xiang
-author_title: [Designer, Web Developer, Mobile Developer, Game Developer]
+author_title: [Robotics Researcher, Web Developer, Game Developer]
 telephone: +1 (858)222-9698
+email_text: fxiang |at| eng.ucsd.edu
 email: fxiang@eng.ucsd.edu
 description: >-
   I am a computer science student focusing on data science and machine learning. I have experience and interest in   computer game making, music information retrieval, and software engineering as well. I will continue with compute  r science after my graduation. After graduation, I would like to work as a developer or researcher either in a co  mpany or in a graduate program.

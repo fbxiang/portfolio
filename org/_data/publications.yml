@@ -1,0 +1,12 @@
+- name: "SAPIEN: A SimulAted Part-based Interactive ENvironment"
+  image: "/assets/sapien.gif"
+  authors: "(Anonymous submission)"
+  links: [["PDF (coming soon)", "#"]]
+  keywords: >-
+    We constructed a PhysX-based simulation environment using PartNet-Mobility
+    dataset to support household robotics tasks. I am the project leader and
+    worked on the following: 1. Constructed web interface for annotation of
+    articulated object dataset. 2. Worked on a high-level simulator backed by
+    PhysX. 3. Implemented OpenGL rasterization and OptiX ray-tracing for scene
+    rendering. 4. Benchmarked motion prediction task with ResNet50/PointNet++ on
+    RGB-D/point cloud inputs.
