@@ -1,0 +1,48 @@
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: portfolio
+title: "SAPIEN: A SimulAted Part-based Interactive ENvironment"
+date: 2019-11-15
+summary:
+  type: Research
+  language: C++, Python
+  status: In submission
+  description: >-
+    SAPIEN is a PhysX-based simulation environment that incorporates a large-scale articulated object dataset.
+    It is suitable for robotics manipulation and learning tasks.
+  images:
+    - key: Simulation Demo
+      content:
+        - url: /assets/sapien.gif
+        - url: /assets/sapien_kitchen.png
+---
+#+END_EXPORT
+
+* SAPIEN Engine
+  I lead the development of SAPIEN Engine, which is an high-level interface for
+  Nvidia PhysX simulator. My contributions include the following:
+  - Full API design.
+  - Robot integration.
+  - PartNet-Mobility Dataset integration.
+
+* SAPIEN Asset: PartNet-Mobility Dataset
+  PartNet-Mobility dataset is a large-scale articulated object dataset that
+  provides the content for SAPIEN environment. It contains more than 2K object
+  models with more than 14k movable parts. This dataset is annotated by our
+  group from the PartNet dataset. My contributions include:
+  - Implemented and maintained the entire annotation interface, including NodeJS
+    backend, MySQL database, and Angular 2 frontend.
+  - Designed annotation procedure and target annotation goals.
+
+* SAPIEN Renderer
+  I created SAPIEN Renderer alone from scratch using OpenGL and OptiX. My
+  contributions include:
+  - Developed OpenGL rasterization based renderer for visualizing the scene.
+  - Developed GPU ray-tracer with Nvidia OptiX for physically accurate rendering.
+
+#+BEGIN_EXPORT html
+<img src="/assets/sapien_robots.png" alt="SAPIEN Kitchen"/>
+#+END_EXPORT
