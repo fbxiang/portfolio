@@ -22,7 +22,7 @@ summary:
 #+END_EXPORT
 
 * SAPIEN Engine
-  I lead the development of SAPIEN Engine, which is an high-level interface for
+  I lead the development of SAPIEN Engine, which is a high-level interface for
   Nvidia PhysX simulator. My contributions include the following:
   - Full API design.
   - Robot integration.
@@ -32,13 +32,13 @@ summary:
   PartNet-Mobility dataset is a large-scale articulated object dataset that
   provides the content for SAPIEN environment. It contains more than 2K object
   models with more than 14k movable parts. This dataset is annotated by our
-  group from the PartNet dataset. My contributions include:
+  group, based on the PartNet dataset. My contributions include:
   - Implemented and maintained the entire annotation interface, including NodeJS
     backend, MySQL database, and Angular 2 frontend.
-  - Designed annotation procedure and target annotation goals.
+  - Designed the entire annotation procedure and goals.
 
 * SAPIEN Renderer
-  I created SAPIEN Renderer alone from scratch using OpenGL and OptiX. My
+  I created SAPIEN Renderer from scratch using OpenGL and OptiX. My
   contributions include:
   - Developed OpenGL rasterization based renderer for visualizing the scene.
   - Developed GPU ray-tracer with Nvidia OptiX for physically accurate rendering.
