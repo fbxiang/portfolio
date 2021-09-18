@@ -22,7 +22,7 @@ summary:
 [[https://github.com/fbxiang/PhysicsVideoGen]]
 
 * 2D physics simulation and collision detection
-I accomplished the following tasks in ths project
+I accomplished the following tasks in the project
 - collision detection between circles and rectangles
 - force and impact simulation
 - rigid body collision resolution
@@ -38,3 +38,4 @@ I accomplished the following tasks in ths project
 </iframe>
 </div>
 #+END_EXPORT
+

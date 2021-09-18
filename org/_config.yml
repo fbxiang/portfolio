@@ -28,6 +28,8 @@ blog: https://www.fbxiang.com/blog
 # Build settings
 
 collections:
+  publications:
+    output: true
   portfolio:
     output: true
   profile:

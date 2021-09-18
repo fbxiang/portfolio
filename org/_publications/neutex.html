@@ -1,0 +1,61 @@
+---
+layout: paper
+---
+
+<div>
+  <h1 class="title">NeuTex: Neural Texture Mapping for Volumetric Neural Rendering</h1>
+  <div class="author">
+    Fanbo Xiang, Zexiang Xu, Miloš Hašan, Yannick Hold-Geoffroy, Kalyan Sunkavalli, Hao Su
+  </div>
+</div>
+<div style="margin: auto; max-width: 1000px; padding: 20px;">
+  <h2 class="abs">Abstract</h2>
+  <p>
+    Recent work has demonstrated that volumetric scene representations combined with differentiable volume rendering can enable photo-realistic rendering for challenging scenes that mesh reconstruction fails on. However, these methods entangle geometry and appearance in a "black-box" volume that cannot be edited. Instead, we present an approach that explicitly disentangles geometry--represented as a continuous 3D volume--from appearance--represented as a continuous 2D texture map. We achieve this by introducing a 3D-to-2D texture mapping (or surface parameterization) network into volumetric representations. We constrain this texture mapping network using an additional 2D-to-3D inverse mapping network and a novel cycle consistency loss to make 3D surface points map to 2D texture points that map back to the original 3D points. We demonstrate that this representation can be reconstructed using only multi-view image supervision and generates high-quality rendering results. More importantly, by separating geometry and texture, we allow users to edit appearance by simply editing 2D texture maps.
+  </p>
+  <p style="text-align: center">
+    <a href="https://arxiv.org/abs/2103.00762">Paper(arXiv)</a>
+  </p>
+
+  <div class="block">
+    <h2 style="text-align: center;">Video</h2>
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+      <iframe id="ytplayer" type="text/html" width="100%" height="100%" style="position: absolute" allowfullscreen
+        src="https://www.youtube.com/embed/7MXFDlCyRk8"
+        a frameborder="0">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2 style="text-align: center;">Architecture</h2>
+    <img src="/assets/neutex_arch.jpg" alt="" />
+    <p>
+We present a disentangled neural representation consisting of multiple MLPs for neural volumetric rendering.
+For geometry we use an MLP (4) to regress volume density at any 3D point.
+In contrast, for appearance, we use a texture mapping MLP (1) to map 3D points to 2D texture UVs, and a texture network (3) to regress the 2D view-dependent radiance in the UV space given a UV and a viewing direction.
+One regressed texture (for a fixed viewing direction) is shown in (5).
+We also train an inverse mapping MLP (2) that maps UVs back to 3D points.
+We leverage a cycle loss to ensure consistency between the 3D-to-2D mapping and the 2D-to-3D mapping at points on the object surface.
+This enables meaningful surface reasoning and texture space discovery, as illustrated by (6, 7).
+We demonstrate the meaningfulness of the UV space learned by (6) by rendering the object with a uniform checkerboard texture.
+We also show the result of the inverse mapping network (7) by uniformly sampling UVs in the texture space and unprojecting them to 3D using, resulting in a reasonable mesh.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2 style="text-align: center;">Results</h2>
+    <img src="/assets/neutex_results.jpg" alt="" />
+    <p>(a) One of input images. (b) NeuTex synthesized image. (c) UV visualization. (d) Cube map visualization. (e,f) Edited Views. (g) Edited cube map.</p>
+  </div>
+
+
+  <h2>Citation</h2>
+  <pre><code>@inproceedings{xiang2021neutex,
+  title={NeuTex: Neural Texture Mapping for Volumetric Neural Rendering},
+  author={Xiang, Fanbo and Xu, Zexiang and Hasan, Milos and Hold-Geoffroy, Yannick and Sunkavalli, Kalyan and Su, Hao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7119--7128},
+  year={2021}
+}</code></pre>
+</div>

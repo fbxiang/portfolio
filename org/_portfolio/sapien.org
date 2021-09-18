@@ -9,7 +9,7 @@ date: 2019-11-15
 summary:
   type: Research
   language: C++, Python
-  status: In submission
+  status: publication, CVPR 2020 (oral)
   description: >-
     SAPIEN is a PhysX-based simulation environment that incorporates a large-scale articulated object dataset.
     It is suitable for robotics manipulation and learning tasks.

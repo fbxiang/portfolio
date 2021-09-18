@@ -1,7 +1,66 @@
+- name: "ManiSkill: Learning-from-Demonstrations Benchmark for Generalizable Manipulation Skills"
+  image: "/assets/mani_skill.jpg"
+  authors: "Tongzhou Mu*, Zhan Ling*, Fanbo Xiang*, Derek Yang*, Xuanlin Li*, Stone Tao, Zhiao Huang, Zhiwei Jia, Hao Su"
+  links: [["PDF", "https://arxiv.org/pdf/2107.14483.pdf"], ["Challenge", "https://sapien.ucsd.edu/challenges/maniskill2021/"], ["Video", "https://youtu.be/TAPU1Fs2xxk"], ["Code", "https://github.com/haosulab/ManiSkill"]]
+  at: "arXiv"
+  keywords: >-
+    Learning to manipulate unseen objects from 3D visual inputs is crucial for
+    robots to achieve task automation. See how we build the SAPIEN Manipulation
+    Skill Benchmark and collect many demonstrations without human labelling.
+    ManiSkill supports object-level variations by utilizing a rich and diverse set
+    of articulated objects, and each task is carefully designed for learning
+    manipulations on a single category of objects.
+- name: "OCRTOC: A Cloud-Based Competition and Benchmark for Robotic Grasping and Manipulation"
+  image: "/assets/ocrtoc.gif"
+  authors: "Ziyuan Liu, Wei Liu, Yuzhe Qin, Fanbo Xiang, Songyan Xin, Maximo A Roa, Berk Calli, Hao Su, Yu Sun, Ping Tan"
+  links: [["PDF", "https://arxiv.org/pdf/2104.11446.pdf"], ["Challenge", "http://www.ocrtoc.org/"]]
+  at: "IEEE Robotics and Automation Letters (RA-L)"
+  keywords: >-
+    We propose a cloud-based benchmark for robotic grasping and manipulation,
+    specifically table organization tasks. With the OCRTOC benchmark, we aim to
+    lower the barrier of conducting reproducible research on robotic grasping and
+    accelerate progress in this field. Using this benchmark we held a competition in
+    IROS 2020, and 59 teams took part in this competition worldwide.
+
+- name: "O2O-Afford: Annotation-Free Large-Scale Object-Object Affordance Learning"
+  image: "/assets/o2oafford.png"
+  authors: "Kaichun Mo, Yuzhe Qin, Fanbo Xiang, Hao Su, Leonidas J. Guibas"
+  links: [["PDF", "https://arxiv.org/abs/2106.15087"], ["Code", "https://cs.stanford.edu/~kaichun/o2oafford/"]]
+  at: "Conference on Robot Learning (CoRL) 2021"
+  keywords: >-
+    Contrary to the vast literature in studying agent-object interaction, very few
+    past works have studied the task of object-object interaction, which also plays
+    important role in downstream robotic manipulation and planning tasks. In this
+    paper, we propose a large-scale annotation-free object-object affordance
+    learning framework for diverse object-object interaction tasks.
+
+- name: "MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo"
+  image: "/assets/mvsnerf.gif"
+  authors: "Anpei Chen, Zexiang Xu, Fuqiang Zhao, Xiaoshuai Zhang, Fanbo Xiang, Jingyi Yu, Hao Su"
+  links: [["PDF", "https://arxiv.org/abs/2103.15595"], ["Code", "https://apchenstu.github.io/mvsnerf"]]
+  at: "ICCV 2021"
+  keywords: >-
+    We present MVSNeRF, a novel neural rendering approach that can efficiently
+    reconstruct neural radiance fields for view synthesis. Our approach leverages
+    plane-swept cost volumes (widely used in multi-view stereo) for geometry-aware
+    scene reasoning, and combines this with physically based volume rendering for
+    neural radiance field reconstruction.
+
+- name: "NeuTex: Neural Texture Mapping for Volumetric Neural Rendering"
+  image: "/assets/neutex_results.jpg"
+  authors: "Fanbo Xiang, Zexiang Xu, Miloš Hašan, Yannick Hold-Geoffroy, Kalyan Sunkavalli, Hao Su"
+  links: [["PDF", "https://arxiv.org/abs/2103.00762"], ["Project Website", "/publications/neutex.html"]]
+  at: "Conference on Computer Vision and Pattern Recognition (CVPR) 2021, Oral"
+  keywords: >-
+    We present an approach that explicitly disentangles geometry--represented as
+    a continuous 3D volume--from appearance--represented as a continuous 2D
+    texture map. We achieve this by introducing a 3D-to-2D texture mapping (or
+    surface parameterization) network into volumetric representations.
 - name: "SAPIEN: A SimulAted Part-based Interactive ENvironment"
   image: "/assets/sapien.gif"
-  authors: "(Anonymous submission)"
-  links: [["PDF (coming soon)", "#"]]
+  authors: "Fanbo Xiang, Yuzhe Qin, Kaichun Mo, Yikuan Xia, Hao Zhu, Fangchen Liu, Minghua Liu, Hanxiao Jiang, Yifu Yuan, He Wang, Li Yi, Angel Chang, Leonidas Guibas, Hao Su"
+  links: [["PDF", "https://arxiv.org/abs/2003.08515"], ["Code", "https://github.com/haosulab/SAPIEN-Release"], ["Project Website", "https://sapien.ucsd.edu/"], ["My contribution", "../portfolio/sapien.html"]]
+  at: "Conference on Computer Vision and Pattern Recognition (CVPR) 2020, Oral"
   keywords: >-
     We constructed a PhysX-based simulation environment using PartNet-Mobility
     dataset to support household robotics tasks. I am the project leader and

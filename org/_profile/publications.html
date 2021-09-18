@@ -12,20 +12,23 @@ title: Publications
     <h2 class="title">
       {{pub.name}}
     </h2>
-    <div>
-      <span class="authors">
-        {{pub.authors}}
-      </span>
-      <span class="links">
-        {% for link in pub.links %}
-        <a class="link" href="{{link[1]}}">{{link[0]}}</a>
-          {% endfor %}
-      </span>
-    </div>
+    <span class="authors">
+      {{pub.authors}}
+    </span>
+    <br>
+    <span style="font-weight: bold;">
+      {{pub.at}}
+    </span>
+    <br>
+    <span class="links">
+      {% for link in pub.links %}
+      <a class="link" href="{{link[1]}}">{{link[0]}}</a>
+      {% endfor %}
+    </span>
     <p class="keywords">
       {{pub.keywords}}
     </p>
     <div style="clear: both;"></div>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>

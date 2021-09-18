@@ -253,7 +253,6 @@ a.side-nav-item:hover, a.side-nav-item.active {
 .publication .authors {
   font-style: italic;
   color: #777;
-  display: inline-block;
 }
 
 .publication .link {
