@@ -2,7 +2,7 @@
   image: "/assets/mani_skill.jpg"
   authors: "Tongzhou Mu*, Zhan Ling*, Fanbo Xiang*, Derek Yang*, Xuanlin Li*, Stone Tao, Zhiao Huang, Zhiwei Jia, Hao Su"
   links: [["PDF", "https://arxiv.org/pdf/2107.14483.pdf"], ["Challenge", "https://sapien.ucsd.edu/challenges/maniskill2021/"], ["Video", "https://youtu.be/TAPU1Fs2xxk"], ["Code", "https://github.com/haosulab/ManiSkill"]]
-  at: "arXiv"
+  at: "NeurIPS 2021 Datasets and Benchmarks Track"
   keywords: >-
     Learning to manipulate unseen objects from 3D visual inputs is crucial for
     robots to achieve task automation. See how we build the SAPIEN Manipulation
