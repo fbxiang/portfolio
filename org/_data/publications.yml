@@ -1,3 +1,29 @@
+- name: "ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills"
+  image: "/assets/maniskill2.jpg"
+  authors: "Jiayuan Gu*, Fanbo Xiang*, Xuanlin Li, Zhan Ling, Xiqiang Liu, Tongzhou Mu, Yihe Tang, Stone Tao, Xinyue Wei, Yunchao Yao, Xiaodi Yuan, Pengwei Xie, Zhiao Huang, Rui Chen, Hao Su"
+  links: [["PDF", "https://arxiv.org/pdf/2302.04659.pdf"], ["Challenge", "https://sapien.ucsd.edu/challenges/maniskill"], ["Project", "https://maniskill2.github.io/"], ["Code", "https://github.com/haosulab/ManiSkill2"]]
+  at: "International Conference on Learning Representations (ICLR) 2023"
+  keywords: >-
+    ManiSkill2 is a unified benchmark for learning generalizable robotic
+    manipulation skills powered by SAPIEN. It features 20 out-of-box task
+    families with 2000+ diverse object models and 4M+ demonstration frames.
+    Moreover, it empowers fast visual input learning algorithms so that a
+    CNN-based policy can collect samples at about 2000 FPS with 1 GPU and 16
+    processes on a workstation. The benchmark can be used to study a wide range
+    of algorithms: 2D & 3D vision-based reinforcement learning, imitation
+    learning, sense-plan-act, etc.
+- name: "Close the Optical Sensing Domain Gap by Physics-Grounded Active Stereo Sensor Simulation"
+  image: "/assets/sim_to_real.gif"
+  authors: "Xiaoshuai Zhang, Rui Chen, Ang Li, Fanbo Xiang, Yuzhe Qin, Jiayuan Gu, Zhan Ling, Minghua Liu, Peiyu Zeng, Songfang Han, Zhiao Huang, Tongzhou Mu, Jing Xu, Hao Su"
+  links: [["PDF", "https://arxiv.org/pdf/2201.11924"], ["Project", "https://angli66.github.io/active-sensor-sim/"], ["Doc", "https://sapien.ucsd.edu/docs/latest/tutorial/rendering/depth_sensor.html"]]
+  at: "T-RO 2023"
+  keywords: >-
+    SAPIEN Realistic depth lowers the sim-to-real gap of simulated depth and
+    real active stereovision depth sensors, by designing a fully
+    physics-grounded pipeline. Perception and RL methods trained in simulation
+    can transfer well to the real world without any fine-tuning. It can also
+    estimate the algorithm performance in the real world, largely reducing human
+    effort of algorithm evaluation.
 - name: "ManiSkill: Learning-from-Demonstrations Benchmark for Generalizable Manipulation Skills"
   image: "/assets/mani_skill.jpg"
   authors: "Tongzhou Mu*, Zhan Ling*, Fanbo Xiang*, Derek Yang*, Xuanlin Li*, Stone Tao, Zhiao Huang, Zhiwei Jia, Hao Su"

@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 author: Fanbo Xiang
-author_title: [Robotics Researcher, Web Developer, Game Developer]
+author_title: [Robotics & Simulation Researcher]
 telephone: +1 (858)222-9698
-email_text: fxiang |at| eng.ucsd.edu
-email: fxiang@eng.ucsd.edu
+email_text: fxiang |at| ucsd.edu
+email: fxiang@ucsd.edu
 description: >-
-  I am a computer science student focusing on data science and machine learning. I have experience and interest in   computer game making, music information retrieval, and software engineering as well. I will continue with compute  r science after my graduation. After graduation, I would like to work as a developer or researcher either in a co  mpany or in a graduate program.
+  I received Ph.D. in Computer Science at UC San Diego advised by professor Hao Su. During my Ph.D. career, I developed the embodied AI simulation platform SAPIEN, now used by hundreds of institutes around the world. Prior to joining UCSD, I earned computer science and math dual bachelor's degrees from University of Illinois Urbana-Champaign.
 baseurl: ""
 url: "www.fbxiang.com"
 github_username:  fbxiang

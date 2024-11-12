@@ -30,30 +30,30 @@
         display: block;
       }
     </style>
-    <div class="dropdown">
-      <div style="display: block; cursor: pointer;" tabindex="0">
-        <h2 display="inline">Projects
-          <svg viewBox="0 0 20 20" style="display: inline; width: 20px; vertical-align: middle;">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-          </svg>
-        </h2>
-      </div>
-      <div>
-        {% for p in site.portfolio reversed %}
-        <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
-          {{p.title}}
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-    <h2>Skills</h2>
-    {% for p in site.skills %}
-    <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
-      {{p.title}}
-    </a>
-    {% endfor %}
-    <!-- <h2>Blog</h2> -->
-    <!-- <a class="side-nav-item" target="_blank" href="{{ site.blog }}">Technical Blog</a> -->
+    <!-- <div class="dropdown">
+         <div style="display: block; cursor: pointer;" tabindex="0">
+         <h2 display="inline">Projects
+         <svg viewBox="0 0 20 20" style="display: inline; width: 20px; vertical-align: middle;">
+         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+         </svg>
+         </h2>
+         </div>
+         <div>
+         {% for p in site.portfolio reversed %}
+         <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+         {{p.title}}
+         </a>
+         {% endfor %}
+         </div>
+         </div> -->
+    <!-- <h2>Skills</h2>
+         {% for p in site.skills %}
+         <a class="side-nav-item {% if page.url==p.url %} active {% endif %}" href="{{p.url}}">
+         {{p.title}}
+         </a>
+         {% endfor %} -->
+    <!-- <h2>Blog</h2>
+         <a class="side-nav-item" target="_blank" href="{{ site.blog }}">Technical Blog</a> -->
   </div>
   <div class="side-nav-menu">
     <div>
