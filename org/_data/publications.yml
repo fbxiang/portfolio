@@ -1,3 +1,67 @@
+- name: "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI"
+  image: "/assets/maniskill3_tall.jpg"
+  authors: "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, Tse-kai Chan, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su"
+  links: [["PDF", "https://arxiv.org/pdf/2410.00425"], ["Project", "https://maniskill.ai/"], ["Code", "https://github.com/haosulab/ManiSkill"]]
+  at: "arXiv"
+  keywords: >-
+    ManiSkill3 is an open-source, GPU-parallelized robotics simulator focusing
+    on generalizable manipulation with contact-rich physics. It supports GPU
+    parallelized simulation+rendering, heterogeneous simulation, and more via a
+    simple object oriented API. ManiSkill3’s high-speed simulation and efficient
+    rendering (30,000+ FPS), performs 10-1000x faster and uses 2-3x less GPU
+    memory than competitors. The platform covers 12 diverse task domains
+    including humanoids, mobile manipulation, and drawing. It provides realistic
+    scenes and millions of demonstration frames. ManiSkill3 also includes
+    comprehensive baselines for RL and learning-from-demonstrations algorithms.
+- name: "NeuManifold: Neural Watertight Manifold Reconstruction with Efficient and High-Quality Rendering Support"
+  image: "/assets/neumanifold.gif"
+  authors: "Xinyue Wei, Fanbo Xiang, Sai Bi, Anpei Chen, Kalyan Sunkavalli, Zexiang Xu, Hao Su"
+  links: [["PDF", "https://arxiv.org/pdf/2305.17134.pdf"], ["Project", "https://sarahweiii.github.io/neumanifold/"], ["Video", "https://www.youtube.com/watch?v=LS7tOld5iJ8"]]
+  at: "arXiv"
+  keywords: >-
+    We present a method for generating high-quality watertight manifold meshes
+    from multi-view input images. Existing volumetric rendering methods are
+    robust in optimization but tend to generate noisy meshes with poor topology.
+    Differentiable rasterization-based methods can generate high-quality meshes
+    but are sensitive to initialization. Our method combines the benefits of
+    both worlds; we take the geometry initialization obtained from neural
+    volumetric fields, and further optimize the geometry as well as a compact
+    neural texture representation with differentiable rasterizers. Through
+    extensive experiments, we demonstrate that our method can generate accurate
+    mesh reconstructions with faithful appearance that are comparable to
+    previous volume rendering methods while being an order of magnitude faster
+    in rendering. We also show that our generated mesh and neural texture
+    reconstruction is compatible with existing graphics pipelines and enables
+    downstream 3D applications such as simulation.
+- name: "General-Purpose Sim2Real Protocol for Learning Contact-Rich Manipulation With Marker-Based Visuotactile Sensors"
+  image: "/assets/tactile_sim2real.gif"
+  authors: "Weihang Chen, Jing Xu, Fanbo Xiang, Xiaodi Yuan, Hao Su, Rui Chen"
+  links: [["PDF", "https://ieeexplore.ieee.org/abstract/document/10388459"], ["Website", "https://cyliizyz.github.io/T_RO_sim2real_page/"]]
+  at: "IEEE Transactions on Robotics (T-RO) 2024"
+  keywords: >-
+    We build a general-purpose Sim2Real protocol for manipulation policy
+    learning with marker-based visuotactile sensors. To improve the simulation
+    fidelity, we employ an FEM-based physics simulator that can simulate the
+    sensor deformation accurately and stably for arbitrary geometries. We
+    further propose a novel tactile feature extraction network that directly
+    processes the set of pixel coordinates of tactile sensor markers and a
+    self-supervised pre-training strategy to improve the efficiency and
+    generalizability of RL policies.
+- name: "Part-Guided 3D RL for Sim2Real Articulated Object Manipulation"
+  image: "/assets/Part3DRL.gif"
+  authors: "Pengwei Xie, Rui Chen, Siang Chen, Yuzhe Qin, Fanbo Xiang, Tianyu Sun, Jing Xu, Guijin Wang, Hao Su"
+  links: [["PDF", "https://ieeexplore.ieee.org/document/10242361"], ["Code", "https://github.com/THU-VCLab/Part-Guided-3D-RL-for-Sim2Real-Articulated-Object-Manipulation"], ["Video", "https://www.youtube.com/watch?v=b8KvOjlGNJs"]]
+  at: "IEEE Robotics and Automation Letters (RA-L) 2023"
+  keywords: >-
+    We proposes a novel part-guided 3D RL framework, which can learn to
+    manipulate articulated objects without demonstrations. We combine the
+    strengths of 2D segmentation and 3D RL to improve the efficiency of RL
+    policy training. Frame-consistent Uncertainty-aware Sampling (FUS) strategy
+    is designed to get a condensed and hierarchical 3D representation, improving
+    the stability of the policy in reality. Futhermore, a single versatile RL
+    policy can be trained on various tasks simultaneously in simulation and
+    shows great generalizability to novel instances in both simulation and
+    reality.
 - name: "ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills"
   image: "/assets/maniskill2.jpg"
   authors: "Jiayuan Gu*, Fanbo Xiang*, Xuanlin Li, Zhan Ling, Xiqiang Liu, Tongzhou Mu, Yihe Tang, Stone Tao, Xinyue Wei, Yunchao Yao, Xiaodi Yuan, Pengwei Xie, Zhiao Huang, Rui Chen, Hao Su"
@@ -85,7 +149,7 @@
 - name: "SAPIEN: A SimulAted Part-based Interactive ENvironment"
   image: "/assets/sapien.gif"
   authors: "Fanbo Xiang, Yuzhe Qin, Kaichun Mo, Yikuan Xia, Hao Zhu, Fangchen Liu, Minghua Liu, Hanxiao Jiang, Yifu Yuan, He Wang, Li Yi, Angel Chang, Leonidas Guibas, Hao Su"
-  links: [["PDF", "https://arxiv.org/abs/2003.08515"], ["Code", "https://github.com/haosulab/SAPIEN-Release"], ["Project Website", "https://sapien.ucsd.edu/"], ["My contribution", "../portfolio/sapien.html"]]
+  links: [["PDF", "https://arxiv.org/abs/2003.08515"], ["Code", "https://github.com/haosulab/SAPIEN-Release"], ["Project Website", "https://sapien.ucsd.edu/"]]
   at: "Conference on Computer Vision and Pattern Recognition (CVPR) 2020, Oral"
   keywords: >-
     We constructed a PhysX-based simulation environment using PartNet-Mobility
